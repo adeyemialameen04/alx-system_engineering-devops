@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$WATER$STIR" | tr 'water' 'bestchol'
+echo $(echo "$WATER + $STIR" | tr 'water' '01234' | tr 'stir' '56789' | tr -d '\n' | tr -d '\r' | bc | tr '0123456789' 'bestchol')
