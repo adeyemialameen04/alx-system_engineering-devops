@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 school=school
 
 if test -f $school; then
