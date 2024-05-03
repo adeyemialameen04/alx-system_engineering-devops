@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#comment
+
+filename=/var/run/myscript.pid
+function sigQuit {
+	sudo rm -rf $filename
+	exit
+}
+
+trap "echo I hate the kill command; exit" SIGTERM
+trap "echo Y U no love me?!" SIGINT
+trap sigQuit SIGQUIT
+
+echo "$$" > filename
+
+while :
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
