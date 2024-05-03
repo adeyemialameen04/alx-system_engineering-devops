@@ -2,14 +2,16 @@
 #comment
 
 filename=/var/run/myscript.pid
-function sigQuit {
-	sudo rm -rf $filename
+sigQuit() {
+	rm -rf $filename
 	exit
 }
 
-trap "echo I hate the kill command; exit" SIGTERM
-trap "echo Y U no love me?!" SIGINT
-trap sigQuit SIGQUIT
+#sigIntStop() {
+	
+#	rm -rf $filename
+#	exit
+#}
 
 echo "$$" > filename
 
@@ -17,4 +19,7 @@ while :
 do
 	echo "To infinity and beyond"
 	sleep 2
+	trap "echo Y U no love me?!" SIGINT
+	trap "echo I hate the kill command && sigQuit" SIGTERM
+	trap 'sigQuit' SIGQUIT
 done
