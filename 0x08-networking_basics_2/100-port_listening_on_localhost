@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#comment
+
+nc -l localhost 98
