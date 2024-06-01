@@ -13,4 +13,3 @@ You must be able to explain some specifics about this infrastructure:
     What is the role of the database -> The db(MySql) stores the app data, like User information and other relevant data.
 
     What is the server using to communicate with the computer of the user requesting the website -> Http
-

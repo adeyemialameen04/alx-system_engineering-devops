@@ -1,0 +1,7 @@
+Link to wireframe: https://imgur.com/a/secured-monitored-web-infrastructure-TWEVmtX
+
+What are firewalls for -> traffic filtering, intrusion prevention, logging and monitoring & many more.
+Why is the traffic served over HTTPS -> It uses the ssl/tls protocol to encrypt communications so that hackers can't steal data.
+What monitoring is used for -> it is used to periodically collect, analyse and use information to actively manage performance.
+How the monitoring tool is collecting data -> Through standard techniques like surveys, interviews and secondary sources.
+Explain what to do if you want to monitor your web server QPS -> Install monitoring tools like Datdog, New relic, etc. Configure a web server, set up metrics calculation and many more.

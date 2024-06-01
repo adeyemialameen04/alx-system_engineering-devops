@@ -1,0 +1,9 @@
+Link to wireframe: https://imgur.com/a/distributed-web-infrastructure-yxIz2ks
+
+What distribution algorithm your load balancer is configured with and how it works -> Round Robin: It works be distributing requests across servers in a sequential/rotational manner. Its the most easy to implement, but there is a risk of a server being overloaded.
+
+Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both -> Active-Active: active active architecture refers to a system configuration where multiple identical resources(servers), are simultaneously active and serving requests. In this setup, incoming requests are distributed across all active resources, allowing for load balancing and maximizing resource utilization.
+
+How a database Primary-Replica (Master-Slave) cluster works -> The slave databse serves as a backup for the master, the master db is used for write operations while the read operations may be spread on multiple slave database.
+
+What is the difference between the Primary node and the Replica node in regard to the application -> Not sure yet would make more research
