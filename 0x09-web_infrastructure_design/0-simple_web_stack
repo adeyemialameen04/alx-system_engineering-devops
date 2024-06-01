@@ -1,1 +1,16 @@
-https://imgur.com/a/lin00Kv
+Link to wireframe image: https://imgur.com/a/lin00Kv
+You must be able to explain some specifics about this infrastructure:
+    What is a server -> This is the main computer that hosts all the components of the stack.
+
+    What is the role of the domain name -> It provides a human readable address to access the website. It points to the server Ip address `8.8.8.8` in this simple web stack.
+
+    What type of DNS record www is in www.foobar.com -> Cname records.
+
+    What is the role of the web server -> The web server handles incoming http requests and returns static content, or passes it  to the application server to handle dynamic requests.
+
+    What is the role of the application server -> It hosts the application files and processes dynamic contents, it executes the logic, interacts with the db, and generate responses to be sent back to the web server.
+
+    What is the role of the database -> The db(MySql) stores the app data, like User information and other relevant data.
+
+    What is the server using to communicate with the computer of the user requesting the website -> Http
+
